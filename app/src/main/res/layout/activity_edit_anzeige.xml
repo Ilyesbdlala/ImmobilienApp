@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textViewTransaktionstyp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/transaktions_typ"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="#070101"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonImage" />
+
+        <EditText
+            android:id="@+id/editTextFläche"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="40dp"
+            android:autofillHints="@string/Fläche"
+            android:ems="10"
+            android:hint="@string/FlächeHint"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewFläche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewFläche"
+            app:layout_constraintTop_toTopOf="@+id/textViewFläche"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="@string/Speichern"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.237"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAdresse"
+            app:layout_constraintVertical_bias="0.417" />
+
+        <TextView
+            android:id="@+id/textViewMaklerProvision"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/Provision"
+            android:textColor="#050000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFläche" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="154dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTransaktionstyp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewTransaktionstyp"
+            app:layout_constraintTop_toTopOf="@+id/textViewTransaktionstyp"
+            app:layout_constraintVertical_bias="0.8">
+
+            <RadioButton
+                android:id="@+id/RadioButtonKauf"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="@string/kauf"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/RadioButtonMiete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/miete" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextZimmern"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:autofillHints="@string/anzahlZimmerHint"
+            android:ems="10"
+            android:hint="@string/anzahlZimmerHint"
+            android:inputType="numberSigned"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAnzahlZimmer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewAnzahlZimmer"
+            app:layout_constraintTop_toTopOf="@+id/textViewAnzahlZimmer"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editTextMaklerProvision"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="28dp"
+            android:autofillHints="@string/Provision"
+            android:ems="10"
+            android:hint="@string/ProvisionHint"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewMaklerProvision"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewMaklerProvision"
+            app:layout_constraintTop_toTopOf="@+id/textViewMaklerProvision"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textViewPreis"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/preis"
+            android:textColor="#0F0202"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextPreis"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMaklerProvision" />
+
+        <TextView
+            android:id="@+id/textViewAdresse"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:text="Adresse:"
+            android:textColor="#0C0404"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPreis" />
+
+        <TextView
+            android:id="@+id/textViewFläche"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/Fläche"
+            android:text="@string/Fläche"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAnzahlZimmer" />
+
+        <TextView
+            android:id="@+id/textViewAnzahlZimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/anzahlZimmer"
+            android:textAlignment="center"
+            android:textColor="#FC0C0C0C"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTransaktionstyp" />
+
+        <EditText
+            android:id="@+id/editTextAdresse"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:autofillHints="@string/adresse"
+            android:ems="10"
+            android:hint="@string/adresse"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAdresse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewAdresse"
+            app:layout_constraintTop_toTopOf="@+id/textViewAdresse"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editTextPreis"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="72dp"
+            android:autofillHints="@string/preis"
+            android:ems="10"
+            android:hint="@string/preisHint"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewPreis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewPreis"
+            app:layout_constraintTop_toTopOf="@+id/textViewPreis"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/cancelEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/Cancel"
+            app:layout_constraintBottom_toBottomOf="@+id/button_save"
+            app:layout_constraintStart_toEndOf="@+id/button_save"
+            app:layout_constraintTop_toTopOf="@+id/button_save" />
+
+        <ImageButton
+            android:id="@+id/buttonImage"
+            android:layout_width="81dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

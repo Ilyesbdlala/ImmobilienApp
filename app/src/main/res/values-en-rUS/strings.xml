@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ImmobilienApp</string>
+    <string name="Adresse">Address</string>
+    <string name="Cancel">Cancel</string>
+    <string name="FavoritDialogTitle">Advertisement as Favorit</string>
+    <string name="Fläche">Surface:</string>
+    <string name="FlächeHint">m²</string>
+    <string name="FlächeOutput">Surface(m²):</string>
+    <string name="FotoGespeichert">Saved photo</string>
+    <string name="MaklerProvision">Broker commision</string>
+    <string name="No">No</string>
+    <string name="Provision">Broker commision :</string>
+    <string name="ProvisionHint">2,3,4%</string>
+    <string name="Speichern">Save</string>
+    <string name="Yes">Yes</string>
+    <string name="action_settings">Settings</string>
+    <string name="addToFavorit">Do you want to add it to favorites?</string>
+    <string name="adresse">Example street 01,5312</string>
+    <string name="angebot">Offer:</string>
+    <string name="anzahlZimmer">Number of rooms:</string>
+    <string name="anzahlZimmerHint">(1,2,3…)</string>
+    <string name="anzeigeImage">Ad Image</string>
+    <string name="areYouSure">Do you want to delete it ?</string>
+    <string name="delete">Delete Advertisement</string>
+    <string name="fertig">Done</string>
+    <string name="fotografieren">Take a photo</string>
+    <string name="kauf">Buy</string>
+    <string name="kundeText">Client</string>
+    <string name="maklerText">Broker</string>
+    <string name="miete">Rent</string>
+    <string name="nurFavorit">Only show favorites:</string>
+    <string name="preis">Price (€) :</string>
+    <string name="preisHint">300</string>
+    <string name="roleChoose">Please select role :</string>
+    <string name="title_activity_anzeige">anzeigeActivity</string>
+    <string name="title_activity_navigation">navigationActivity</string>
+    <string name="title_anzeige">Advertisement</string>
+    <string name="title_editor">Editor</string>
+    <string name="title_termine">Termine</string>
+    <string name="transaktions_typ">Type of Transaction :</string>
+</resources>

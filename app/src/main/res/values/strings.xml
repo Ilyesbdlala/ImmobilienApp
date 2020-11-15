@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">ImmobilienApp</string>
+    <string name="roleChoose">Bitte Rolle Auswählen :</string>
+    <string name="kundeText">Kunde</string>
+    <string name="maklerText">Makler</string>
+    <string name="title_activity_anzeige">anzeigeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation">navigationActivity</string>
+    <string name="title_anzeige">Anzeige</string>
+    <string name="title_editor">Editor</string>
+    <string name="title_termine">Termine</string>
+    <string name="anzeigeImage">Anzeige Image</string>
+
+    <string name="adresse">Example street 01,5312</string>
+    <string name="anzahlZimmer">Anzahl Zimmer:  </string>
+    <string name="anzahlZimmerHint">(1,2,3…)</string>
+    <string name="preis">Preis (€) : </string>
+    <string name="preisHint">300</string>
+    <string name="angebot">Angebot : </string>
+    <string name="Fläche">Fläche :</string>
+    <string name="FlächeOutput">Fläche(m²):</string>
+    <string name="FlächeHint">m²</string>
+    <string name="Provision">Makler Provision :</string>
+    <string name="ProvisionHint">2,3,4%</string>
+    <string name="Speichern"> Speichern </string>
+    <string name="transaktions_typ"> Transanktionstyp :</string>
+    <string name="kauf">Kauf</string>
+    <string name="miete">Miete</string>
+
+    <string name="fotografieren">ein Foto machen</string>
+    <string name="fertig">fertig</string>
+    <string name="FotoGespeichert">Foto gespeichert</string>
+    <string name="Yes">Ja</string>
+    <string name="Cancel">Abbrechen</string>
+    <string name="No">Nein</string>
+    <string name="areYouSure">Wollen Sie diese Anzeige löschen?</string>
+    <string name="delete">Anzeige löschen</string>
+
+    <string name="Adresse">Adresse</string>
+
+    <string name="FavoritDialogTitle">Anzeige als Favorit</string>
+    <string name="nurFavorit">Nur Favorit anzeigen : </string>
+    <string name="addToFavorit">Wollen Sie diese Anzeige als Favorit speichern ?</string>
+
+    <string name="MaklerProvision">Makler Provision (%):</string>
+
+
+
+</resources>

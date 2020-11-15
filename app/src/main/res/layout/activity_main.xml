@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+
+  <ImageButton
+      android:id="@+id/maklerButton"
+      android:layout_width="156dp"
+      android:layout_height="156dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="38dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="144dp"
+      android:background="@null"
+      android:contentDescription="@string/maklerText"
+
+
+      android:onClick="maklerActivity"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/kundButton"
+      app:layout_constraintTop_toBottomOf="@+id/roleText"
+      app:srcCompat="@drawable/makler" />
+
+  <ImageButton
+      android:id="@+id/kundButton"
+      android:layout_width="156dp"
+      android:layout_height="156dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="144dp"
+      android:background="@null"
+      android:contentDescription="@string/kundeText"
+      android:onClick="kundeActivity"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="parent"
+
+      app:layout_constraintEnd_toStartOf="@+id/maklerButton"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/maklerButton"
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/customers" />
+
+  <TextView
+      android:id="@+id/roleText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="40dp"
+      android:fontFamily="serif"
+      android:text="@string/roleChoose"
+      android:textSize="25sp"
+      app:layout_constraintBottom_toTopOf="@+id/maklerButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.272"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+  <TextView
+      android:id="@+id/kundeText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="25dp"
+      android:text="@string/kundeText"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="@+id/kundButton"
+      app:layout_constraintHorizontal_bias="0.49"
+      app:layout_constraintStart_toStartOf="@+id/kundButton"
+      app:layout_constraintTop_toBottomOf="@+id/kundButton" />
+
+  <TextView
+      android:id="@+id/maklerText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="25dp"
+      android:text="@string/maklerText"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="@+id/maklerButton"
+      app:layout_constraintStart_toStartOf="@+id/maklerButton"
+      app:layout_constraintTop_toBottomOf="@+id/maklerButton" />
+
+  <TextView
+      android:id="@+id/appName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:layout_marginTop="28sp"
+      android:layout_marginEnd="60dp"
+      android:layout_marginBottom="28dp"
+      android:text="@string/app_name"
+      android:textColor="@color/colorPrimary"
+      android:textSize="40sp"
+      app:layout_constraintBottom_toTopOf="@+id/roleText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.483"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
